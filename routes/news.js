@@ -27,4 +27,13 @@ router.put('/:id', CatchAsync(async (req, res) => {
 
 }))
 
+// clear all news
+router.get('/clear', CatchAsync(async (req, res) => {
+    if(req.headers.token === process.env.token){
+        await News.deleteMany()
+        return res.send("Successfully Cleared all news")
+    }
+    else res.send("Not Authorized")
+}))
+
 module.exports = router

@@ -36,4 +36,12 @@ router.put('/:id', CatchAsync(async (req, res) => {
     res.send(updatedEvent)
 }))
 
+// Clear all events ROUTE
+router.get('/clear', CatchAsync(async (req, res) => {
+    if(req.headers.token === process.env.token){
+        await Events.deleteMany()
+        return res.send("Successfully Cleared all events")
+    }
+    else res.send("Not Authorized")
+}))
 module.exports = router

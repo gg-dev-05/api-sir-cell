@@ -1,12 +1,12 @@
-// Add fake news to database for testing
+// Add fake events to database for testing
+function addEvents(){
 
-function addNews(){
-    const data = require('./dummyNews')
+    const data = require('./dummyEvents')
     const axios = require('axios')
     
-    data.forEach((newsItem) => {
-        axios.post('http://localhost:5000/news', 
-            newsItem
+    data.forEach((event) => {
+        axios.post('http://localhost:5000/events', 
+            event
             )
             .then(function (response) {
                 console.log(response.data);
@@ -17,4 +17,4 @@ function addNews(){
     })
 }
 
-module.exports = addNews
+module.exports = addEvents

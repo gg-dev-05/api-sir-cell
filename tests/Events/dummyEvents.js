@@ -2,8 +2,7 @@
 module.exports = [
 	{
 		title: "Borametallomimetics- Activation of Small Molecules by Low-valent Boron Species",
-		date: "21st February, 2021",
-		time: "9pm",
+		date: "1616527059100",
 		speakers: [
 			{
 				name: "Dr. Holger Braunschweig",
@@ -27,8 +26,7 @@ module.exports = [
 	},
 	{
 		title: "Borametallomimetics- Activation of Small Molecules by Low-valent Boron Species",
-		date: "21st February, 2021",
-		time: "9pm",
+		date: "1616527059100",
 		speakers: [
 			{
 				name: "Dr. Holger Braunschweig",
@@ -57,8 +55,7 @@ module.exports = [
 	},
 	{
 		title: "Borametallomimetics- Activation of Small Molecules by Low-valent Boron Species",
-		date: "21st February, 2021",
-		time: "9pm",
+		date: "1616527059100",
 		speakers: [
 			{
 				name: "Dr. Holger Braunschweig",
