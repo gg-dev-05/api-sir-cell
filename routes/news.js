@@ -17,4 +17,14 @@ router.post('/', CatchAsync(async (req, res) => {
     res.send(news)
 }))
 
+// update a news
+// req.body: title, image, text
+router.put('/:id', CatchAsync(async (req, res) => {
+    const id = req.params.id
+    const news = await News.findById(id);
+    const updatedNews = await News.findByIdAndUpdate(id, {...news._doc, ...req.body}, {returnOriginal: false});
+    res.send(updatedNews)
+
+}))
+
 module.exports = router
