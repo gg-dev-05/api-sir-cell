@@ -1,3 +1,5 @@
+// Add fake news to database for testing
+
 const data = require('./dummyNews')
 const axios = require('axios')
 
